@@ -35,3 +35,15 @@ jobs:
           script: |
             echo Welcome to your Instance Abdulmalik!
             ls
+            cd /home/ubuntu/mern-stack
+            git fetch
+            git pull origin main
+            cd client/
+            npm install
+            npm run build
+            sudo mv build /var/www/
+            cd ..
+            sudo systemctl reload nginx
+            cd server/
+            npm install
+            npm start
