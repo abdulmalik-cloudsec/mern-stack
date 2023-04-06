@@ -37,11 +37,11 @@ jobs:
             ls
             cd /home/ubuntu/mern-stack
             git fetch
-            git pull origin/main
+            git pull origin main
             cd client/
             npm install
             npm run build
-            mv build /var/www/
+            sudo mv build /var/www/
             cd ..
             sudo systemctl reload nginx
             cd server/
