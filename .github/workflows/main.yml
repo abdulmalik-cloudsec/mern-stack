@@ -29,9 +29,9 @@ jobs:
       - name: SSH Remote Commands
         uses: appleboy/ssh-action@v0.1.5
         with:
-          host: ${{ secrets.HOSTNAME }}
-          key: ${{ secrets.AWS_PRIVATE_KEY }}
-          username: ${{ secrets.AWS_USERNAME }}
+          host: ${{secrets.HOSTNAME}}
+          key: ${{secrets.AWS_PRIVATE_KEY}}
+          username: ${{secrets.AWS_USERNAME}}
           script: |
             echo Hello World!
             ls
