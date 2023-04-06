@@ -33,7 +33,7 @@ jobs:
           key: ${{ secrets.AWS_PRIVATE_KEY }}
           username: ${{ secrets.AWS_USERNAME }}
           script: |
-            echo Welcome to your Instance O. Abdulmalik!
+            echo Welcome to your Instance Abdulmalik!
             ls
             cd /home/ubuntu/mern-stack
             git fetch
@@ -43,8 +43,7 @@ jobs:
             npm run build
             sudo mv build /var/www/
             cd ..
-            sudo systemctl reload nginx
+            sudo systemctl restart nginx
             cd server/
             npm install
-            sudo lsof -i :5000
             npm start
