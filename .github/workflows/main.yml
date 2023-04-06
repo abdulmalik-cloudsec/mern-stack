@@ -35,3 +35,14 @@ jobs:
           script: |
             echo Hello World!
             ls
+            cd /home/ubuntu/mern-stack
+            git fetch
+            git pull origin/main
+            cd client/
+            npm install && npm run build
+            mv build /var/www/
+            cd ..
+            systemctl reload nginx
+            cd server/
+            npm install
+            npm start
