@@ -1,6 +1,8 @@
 # Memories
 
-![Memories](https://i.ibb.co/Z8Y0CJv/Screenshot-2020-10-30-at-11-10-04.png)
+This project create a MERN stack: MongoDB, Express, React and NodeJs and deploy to AWS using Github Action to perform CI/CD
+
+![mern-stack](https://user-images.githubusercontent.com/62616273/233767713-a1ca3879-0e61-4410-a131-f5edfd64cb78.png)
 
 ## Introduction
 This is a code repository for the corresponding video tutorial - https://youtube.com/playlist?list=PL6QREj8te1P7VSwhrMf3D3Xt4V6_SRkhu.
